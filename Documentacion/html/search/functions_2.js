@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['calculate_5fangles_0',['calculate_angles',['../mpu9250_8c.html#a12ae161fe77374a4e1c90ebe02fcd761',1,'calculate_angles(int16_t eulerAngles[2], int16_t accel[3], int16_t gyro[3], uint64_t usSinceLastReading):&#160;mpu9250.c'],['../mpu9250_8h.html#a12ae161fe77374a4e1c90ebe02fcd761',1,'calculate_angles(int16_t eulerAngles[2], int16_t accel[3], int16_t gyro[3], uint64_t usSinceLastReading):&#160;mpu9250.c']]],
+  ['calculate_5fangles_5ffrom_5faccel_1',['calculate_angles_from_accel',['../mpu9250_8c.html#af6961a9be014da267c9cf9fd538d314b',1,'calculate_angles_from_accel(int16_t eulerAngles[2], int16_t accel[3]):&#160;mpu9250.c'],['../mpu9250_8h.html#af6961a9be014da267c9cf9fd538d314b',1,'calculate_angles_from_accel(int16_t eulerAngles[2], int16_t accel[3]):&#160;mpu9250.c']]],
+  ['calibrate_5facc_2',['calibrate_acc',['../mpu9250_8c.html#a08c19906b388ad5cb7a6955de03d37b6',1,'calibrate_acc(int16_t accCal[3], int loop):&#160;mpu9250.c'],['../mpu9250_8h.html#a08c19906b388ad5cb7a6955de03d37b6',1,'calibrate_acc(int16_t accCal[3], int loop):&#160;mpu9250.c']]],
+  ['calibrate_5fgyro_3',['calibrate_gyro',['../mpu9250_8c.html#ab35ba91e3521f4387efc52460315b246',1,'calibrate_gyro(int16_t gyroCal[3], int loop):&#160;mpu9250.c'],['../mpu9250_8h.html#ab35ba91e3521f4387efc52460315b246',1,'calibrate_gyro(int16_t gyroCal[3], int loop):&#160;mpu9250.c']]],
+  ['calibrate_5fmag_4',['calibrate_mag',['../mpu9250_8c.html#ac75b1d2c72478896aad3d477ab283a5f',1,'calibrate_mag(int16_t magCal[3], int loop):&#160;mpu9250.c'],['../mpu9250_8h.html#ac75b1d2c72478896aad3d477ab283a5f',1,'calibrate_mag(int16_t magCal[3], int loop):&#160;mpu9250.c']]],
+  ['check_5fconnection_5',['check_connection',['../namespaceread_port.html#a26950a9fd17b8107bf6ec81885d4484b',1,'readPort']]],
+  ['connecttowifi_6',['connectToWifi',['../telemetria_8c.html#ad6afb32bbdf9918dca4c2b4de623ab06',1,'connectToWifi():&#160;telemetria.c'],['../wmodule_8c.html#ad6afb32bbdf9918dca4c2b4de623ab06',1,'connectToWifi():&#160;wmodule.c'],['../wmodule_8h.html#ad6afb32bbdf9918dca4c2b4de623ab06',1,'connectToWifi():&#160;telemetria.c']]],
+  ['convert_5fto_5ffull_7',['convert_to_full',['../mpu9250_8c.html#aad1438970b802df71b07b32b80f16d1c',1,'convert_to_full(int16_t eulerAngles[2], int16_t accel[3], int16_t fullAngles[2]):&#160;mpu9250.c'],['../mpu9250_8h.html#aad1438970b802df71b07b32b80f16d1c',1,'convert_to_full(int16_t eulerAngles[2], int16_t accel[3], int16_t fullAngles[2]):&#160;mpu9250.c']]],
+  ['create_5fsocket_8',['create_socket',['../namespaceread_port.html#ad4d63f19bd6c3c2914ed4f2109bb2393',1,'readPort']]],
+  ['cs_5fdeselect_9',['cs_deselect',['../mpu9250_8c.html#ae1b193a0e8a0997e8ce05e9dfb9607b0',1,'mpu9250.c']]],
+  ['cs_5fselect_10',['cs_select',['../mpu9250_8c.html#a4678de0b45fa80d41eff3b7b6eeeecde',1,'mpu9250.c']]]
+];

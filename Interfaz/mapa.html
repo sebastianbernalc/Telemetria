@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15a8ad74c3695a402b80c4bda950c93a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 50.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Telemetría Dron</h1>
+    
+
+<style>
+
+</style>
+
+<div id="fig_el1386822585054699526619834583"></div>
+<script>
+function mpld3_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
+   // already loaded: just create the figure
+   !function(mpld3){
+       
+       mpld3.draw_figure("fig_el1386822585054699526619834583", {"width": 1200.0, "height": 400.0, "axes": [{"bbox": [0.125, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-1.32785, 0.25505], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-1.32785, 0.25505], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 10, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258461903168", "lines": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "id": "el138682258528798416", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 2, "coordinates": "data", "id": "el138682258528799136", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 3, "coordinates": "data", "id": "el138682258528799808", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528801584", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528803072", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528804560", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528800240", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462222432"}, {"text": "Valores", "position": [-0.17878434886499406, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462223728"}, {"text": "Gr\u00e1fica de la Aceleracion", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462477232"}, {"text": "Aceleraci\u00f3n X", "position": [0.6079032258064515, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528800912"}, {"text": "Aceleraci\u00f3n Y", "position": [0.6079032258064515, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528802400"}, {"text": "Aceleraci\u00f3n Z", "position": [0.6079032258064515, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528803888"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.3985294117647059, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-42.483135000000004, 61.304835000000004], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-42.483135000000004, 61.304835000000004], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 8, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462220800", "lines": [{"data": "data01", "xindex": 0, "yindex": 4, "coordinates": "data", "id": "el138682258528806480", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 5, "coordinates": "data", "id": "el138682258528801872", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 6, "coordinates": "data", "id": "el138682258528807440", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528809168", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528810656", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528812144", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528807776", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462488368"}, {"text": "Valores", "position": [-0.16233273596176834, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462489616"}, {"text": "Gr\u00e1fica del Giroscopio", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462710592"}, {"text": "Gyro X", "position": [0.7829301075268817, 0.9237012987012989], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528808496"}, {"text": "Gyro Y", "position": [0.7829301075268817, 0.8556998556998556], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528809984"}, {"text": "Gyro Z", "position": [0.7829301075268817, 0.7876984126984128], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528811472"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.6720588235294118, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-0.6151949999999999, 0.029295], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-0.6151949999999999, 0.029295], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 9, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462486736", "lines": [{"data": "data01", "xindex": 0, "yindex": 7, "coordinates": "data", "id": "el138682258529043504", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 8, "coordinates": "data", "id": "el138682258529043600", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 9, "coordinates": "data", "id": "el138682258529044464", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 1, "coordinates": "axes", "id": "el138682258529046192", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 2, "coordinates": "axes", "id": "el138682258529047680", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 3, "coordinates": "axes", "id": "el138682258529049168", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 2, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258529044800", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528600944"}, {"text": "Valores", "position": [-0.17878434886499361, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528602192"}, {"text": "Gr\u00e1fica del Magnetometro", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528609536"}, {"text": "Magneto X", "position": [0.6814784946236565, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529045520"}, {"text": "Magneto Y", "position": [0.6814784946236565, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529047008"}, {"text": "Magneto Z", "position": [0.6814784946236565, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529048496"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[0.0, -0.0699, -0.0083, -1.0003, 0.2823, -1.1597, 0.0916, -0.1465, -0.5859, 0.0], [1.0, -0.0699, -0.0017, -1.0032, -0.3052, -0.8316, 0.1221, -0.1465, -0.5859, 0.0], [2.0, -0.0696, -0.0039, -0.9864, -0.061, -0.8316, 0.2441, -0.1465, -0.5859, 0.0], [3.0, -0.0657, 0.0176, -0.9783, -4.7913, -5.4321, 2.8229, -0.1465, -0.5859, 0.0], [4.0, -0.0755, -0.0474, -0.9732, -1.5182, -0.8545, -14.6027, -0.1465, -0.5859, 0.0], [5.0, -0.0682, 0.0081, -0.9979, 0.0, -0.9308, 0.206, -0.1465, -0.5859, 0.0], [6.0, -0.0779, -0.0017, -1.0069, -0.5188, -0.8545, 0.0229, -0.1465, -0.5859, 0.0], [7.0, -0.067, -0.0115, -1.0147, -0.061, -1.2054, 0.1297, -0.1465, -0.5859, 0.0], [8.0, -0.0679, -0.0037, -0.9993, -0.0458, -0.7706, 0.2136, -0.1465, -0.5859, 0.0], [9.0, -0.0687, -0.0051, -1.0035, 0.3433, -1.0529, 0.061, -0.1465, -0.5859, 0.0], [10.0, -0.1724, -0.0095, -0.9129, 8.6517, 16.3116, 1.8082, -0.1465, -0.5859, 0.0], [11.0, -0.0994, -0.1375, -1.0721, 24.9557, -5.0354, -16.5634, -0.1465, -0.5859, 0.0], [12.0, -0.0721, 0.073, -1.0467, -7.2327, -0.5264, -24.9939, -0.1465, -0.5859, 0.0], [13.0, -0.1402, 0.0415, -0.9288, 20.5688, 14.0228, 36.5524, -0.1465, -0.5859, 0.0], [14.0, -0.0411, 0.0571, -0.7916, -0.0916, 10.7193, -21.553, -0.1465, -0.5859, 0.0], [15.0, -0.0867, 0.0425, -1.0318, 0.4807, 21.7819, -23.1552, -0.1465, -0.5859, 0.0], [16.0, -0.1307, 0.0266, -1.0875, -21.8964, -12.0468, 23.8953, -0.1465, -0.5859, 0.0], [17.0, -0.0999, -0.0496, -1.053, 2.7084, -3.8757, -1.0452, -0.1465, -0.5859, 0.0], [18.0, -0.1024, -0.1465, -0.96, 12.3062, 4.3411, 29.2511, -0.1465, -0.5859, 0.0], [19.0, -0.1404, -0.0762, -1.0967, -0.0992, 17.2501, 56.5872, -0.1465, -0.5859, 0.0], [20.0, -0.0892, -0.166, -1.0826, 3.7689, 2.3041, -37.7655, -0.1465, -0.5859, 0.0], [21.0, 0.1725, 0.0593, -1.0735, 7.6675, 16.4261, 1.8921, -0.1465, -0.5859, 0.0], [22.0, -0.0462, 0.1831, -1.0167, -2.1591, -12.8021, 15.8615, -0.1465, -0.5859, 0.0], [23.0, -0.0013, 0.0234, -0.8211, -4.0817, -6.4774, 4.425, -0.1465, -0.5859, 0.0], [24.0, -0.1783, -0.0574, -1.2559, 14.473, -7.637, -18.1274, -0.1465, -0.5859, 0.0], [25.0, -0.0174, 0.0454, -0.7767, 5.0964, -16.3116, -0.9918, -0.1465, -0.5859, 0.0], [26.0, 0.0871, 0.0759, -0.8536, -4.6539, -4.1809, -28.3432, -0.1465, -0.5859, 0.0], [27.0, -0.0604, 0.0671, -1.1885, 5.3024, 6.0806, 10.0937, -0.1465, -0.5859, 0.0], [28.0, 0.0358, 0.1707, -0.9385, 4.303, -21.5836, 14.679, -0.1465, -0.5859, 0.0], [29.0, -0.139, 0.1729, -1.0076, -3.334, -11.5433, -36.232, -0.1465, -0.5859, 0.0], [30.0, 0.0544, 0.0635, -0.8052, -5.806, -13.2294, -5.4245, -0.1465, -0.5859, 0.0], [31.0, 0.1303, 0.1675, -1.0279, -3.2196, -2.8076, -9.3002, -0.1465, -0.5859, 0.0], [32.0, 0.0346, 0.1313, -1.2083, 5.3101, 27.5879, 12.1307, -0.1465, -0.5859, 0.0], [33.0, -0.0074, 0.043, -0.9876, 0.1984, -34.4391, -14.4348, -0.1465, -0.5859, 0.0]], "data02": [[0.4657287933094384, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.5393040621266434], [0.516505376344086, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.590080645161291], [0.5672819593787335, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.6408572281959385]], "data03": [[0.4555734767025089, 0.3912337662337661, 0.5291487455197137], [0.9644563918757466, 0.3912337662337661, 0.9644563918757472], [0.9746117084826761, 0.3912337662337661, 0.9746117084826769], [0.9746117084826761, 0.40025252525252514, 0.9746117084826769], [0.9746117084826761, 0.5997474747474747, 0.9746117084826769], [0.9746117084826761, 0.6087662337662336, 0.9746117084826769], [0.9644563918757466, 0.6087662337662336, 0.9644563918757472], [0.4555734767025089, 0.6087662337662336, 0.5291487455197137], [0.44541816009557933, 0.6087662337662336, 0.5189934289127844], [0.44541816009557933, 0.5997474747474747, 0.5189934289127844], [0.44541816009557933, 0.40025252525252514, 0.5189934289127844], [0.44541816009557933, 0.3912337662337661, 0.5189934289127844], [0.4555734767025089, 0.3912337662337661, 0.5291487455197137]], "data04": [[0.6407556750298682, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.6915322580645158, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.7423088410991633, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411]], "data05": [[0.6306003584229389, 0.7599206349206349], [0.9644563918757465, 0.7599206349206349], [0.9746117084826762, 0.7599206349206349], [0.9746117084826762, 0.768939393939394], [0.9746117084826762, 0.9684343434343436], [0.9746117084826762, 0.9774531024531026], [0.9644563918757465, 0.9774531024531026], [0.6306003584229389, 0.9774531024531026], [0.6204450418160092, 0.9774531024531026], [0.6204450418160092, 0.9684343434343436], [0.6204450418160092, 0.768939393939394], [0.6204450418160092, 0.7599206349206349], [0.6306003584229389, 0.7599206349206349]]}, "id": "el138682258505469952", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+   }(mpld3);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/mpld3
+   require.config({paths: {d3: "https://d3js.org/d3.v5"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.5.9.js", function(){
+         
+         mpld3.draw_figure("fig_el1386822585054699526619834583", {"width": 1200.0, "height": 400.0, "axes": [{"bbox": [0.125, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-1.32785, 0.25505], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-1.32785, 0.25505], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 10, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258461903168", "lines": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "id": "el138682258528798416", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 2, "coordinates": "data", "id": "el138682258528799136", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 3, "coordinates": "data", "id": "el138682258528799808", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528801584", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528803072", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528804560", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528800240", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462222432"}, {"text": "Valores", "position": [-0.17878434886499406, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462223728"}, {"text": "Gr\u00e1fica de la Aceleracion", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462477232"}, {"text": "Aceleraci\u00f3n X", "position": [0.6079032258064515, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528800912"}, {"text": "Aceleraci\u00f3n Y", "position": [0.6079032258064515, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528802400"}, {"text": "Aceleraci\u00f3n Z", "position": [0.6079032258064515, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528803888"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.3985294117647059, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-42.483135000000004, 61.304835000000004], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-42.483135000000004, 61.304835000000004], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 8, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462220800", "lines": [{"data": "data01", "xindex": 0, "yindex": 4, "coordinates": "data", "id": "el138682258528806480", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 5, "coordinates": "data", "id": "el138682258528801872", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 6, "coordinates": "data", "id": "el138682258528807440", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528809168", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528810656", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528812144", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528807776", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462488368"}, {"text": "Valores", "position": [-0.16233273596176834, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462489616"}, {"text": "Gr\u00e1fica del Giroscopio", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462710592"}, {"text": "Gyro X", "position": [0.7829301075268817, 0.9237012987012989], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528808496"}, {"text": "Gyro Y", "position": [0.7829301075268817, 0.8556998556998556], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528809984"}, {"text": "Gyro Z", "position": [0.7829301075268817, 0.7876984126984128], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528811472"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.6720588235294118, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-0.6151949999999999, 0.029295], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-0.6151949999999999, 0.029295], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 9, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462486736", "lines": [{"data": "data01", "xindex": 0, "yindex": 7, "coordinates": "data", "id": "el138682258529043504", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 8, "coordinates": "data", "id": "el138682258529043600", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 9, "coordinates": "data", "id": "el138682258529044464", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 1, "coordinates": "axes", "id": "el138682258529046192", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 2, "coordinates": "axes", "id": "el138682258529047680", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 3, "coordinates": "axes", "id": "el138682258529049168", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 2, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258529044800", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528600944"}, {"text": "Valores", "position": [-0.17878434886499361, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528602192"}, {"text": "Gr\u00e1fica del Magnetometro", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528609536"}, {"text": "Magneto X", "position": [0.6814784946236565, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529045520"}, {"text": "Magneto Y", "position": [0.6814784946236565, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529047008"}, {"text": "Magneto Z", "position": [0.6814784946236565, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529048496"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[0.0, -0.0699, -0.0083, -1.0003, 0.2823, -1.1597, 0.0916, -0.1465, -0.5859, 0.0], [1.0, -0.0699, -0.0017, -1.0032, -0.3052, -0.8316, 0.1221, -0.1465, -0.5859, 0.0], [2.0, -0.0696, -0.0039, -0.9864, -0.061, -0.8316, 0.2441, -0.1465, -0.5859, 0.0], [3.0, -0.0657, 0.0176, -0.9783, -4.7913, -5.4321, 2.8229, -0.1465, -0.5859, 0.0], [4.0, -0.0755, -0.0474, -0.9732, -1.5182, -0.8545, -14.6027, -0.1465, -0.5859, 0.0], [5.0, -0.0682, 0.0081, -0.9979, 0.0, -0.9308, 0.206, -0.1465, -0.5859, 0.0], [6.0, -0.0779, -0.0017, -1.0069, -0.5188, -0.8545, 0.0229, -0.1465, -0.5859, 0.0], [7.0, -0.067, -0.0115, -1.0147, -0.061, -1.2054, 0.1297, -0.1465, -0.5859, 0.0], [8.0, -0.0679, -0.0037, -0.9993, -0.0458, -0.7706, 0.2136, -0.1465, -0.5859, 0.0], [9.0, -0.0687, -0.0051, -1.0035, 0.3433, -1.0529, 0.061, -0.1465, -0.5859, 0.0], [10.0, -0.1724, -0.0095, -0.9129, 8.6517, 16.3116, 1.8082, -0.1465, -0.5859, 0.0], [11.0, -0.0994, -0.1375, -1.0721, 24.9557, -5.0354, -16.5634, -0.1465, -0.5859, 0.0], [12.0, -0.0721, 0.073, -1.0467, -7.2327, -0.5264, -24.9939, -0.1465, -0.5859, 0.0], [13.0, -0.1402, 0.0415, -0.9288, 20.5688, 14.0228, 36.5524, -0.1465, -0.5859, 0.0], [14.0, -0.0411, 0.0571, -0.7916, -0.0916, 10.7193, -21.553, -0.1465, -0.5859, 0.0], [15.0, -0.0867, 0.0425, -1.0318, 0.4807, 21.7819, -23.1552, -0.1465, -0.5859, 0.0], [16.0, -0.1307, 0.0266, -1.0875, -21.8964, -12.0468, 23.8953, -0.1465, -0.5859, 0.0], [17.0, -0.0999, -0.0496, -1.053, 2.7084, -3.8757, -1.0452, -0.1465, -0.5859, 0.0], [18.0, -0.1024, -0.1465, -0.96, 12.3062, 4.3411, 29.2511, -0.1465, -0.5859, 0.0], [19.0, -0.1404, -0.0762, -1.0967, -0.0992, 17.2501, 56.5872, -0.1465, -0.5859, 0.0], [20.0, -0.0892, -0.166, -1.0826, 3.7689, 2.3041, -37.7655, -0.1465, -0.5859, 0.0], [21.0, 0.1725, 0.0593, -1.0735, 7.6675, 16.4261, 1.8921, -0.1465, -0.5859, 0.0], [22.0, -0.0462, 0.1831, -1.0167, -2.1591, -12.8021, 15.8615, -0.1465, -0.5859, 0.0], [23.0, -0.0013, 0.0234, -0.8211, -4.0817, -6.4774, 4.425, -0.1465, -0.5859, 0.0], [24.0, -0.1783, -0.0574, -1.2559, 14.473, -7.637, -18.1274, -0.1465, -0.5859, 0.0], [25.0, -0.0174, 0.0454, -0.7767, 5.0964, -16.3116, -0.9918, -0.1465, -0.5859, 0.0], [26.0, 0.0871, 0.0759, -0.8536, -4.6539, -4.1809, -28.3432, -0.1465, -0.5859, 0.0], [27.0, -0.0604, 0.0671, -1.1885, 5.3024, 6.0806, 10.0937, -0.1465, -0.5859, 0.0], [28.0, 0.0358, 0.1707, -0.9385, 4.303, -21.5836, 14.679, -0.1465, -0.5859, 0.0], [29.0, -0.139, 0.1729, -1.0076, -3.334, -11.5433, -36.232, -0.1465, -0.5859, 0.0], [30.0, 0.0544, 0.0635, -0.8052, -5.806, -13.2294, -5.4245, -0.1465, -0.5859, 0.0], [31.0, 0.1303, 0.1675, -1.0279, -3.2196, -2.8076, -9.3002, -0.1465, -0.5859, 0.0], [32.0, 0.0346, 0.1313, -1.2083, 5.3101, 27.5879, 12.1307, -0.1465, -0.5859, 0.0], [33.0, -0.0074, 0.043, -0.9876, 0.1984, -34.4391, -14.4348, -0.1465, -0.5859, 0.0]], "data02": [[0.4657287933094384, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.5393040621266434], [0.516505376344086, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.590080645161291], [0.5672819593787335, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.6408572281959385]], "data03": [[0.4555734767025089, 0.3912337662337661, 0.5291487455197137], [0.9644563918757466, 0.3912337662337661, 0.9644563918757472], [0.9746117084826761, 0.3912337662337661, 0.9746117084826769], [0.9746117084826761, 0.40025252525252514, 0.9746117084826769], [0.9746117084826761, 0.5997474747474747, 0.9746117084826769], [0.9746117084826761, 0.6087662337662336, 0.9746117084826769], [0.9644563918757466, 0.6087662337662336, 0.9644563918757472], [0.4555734767025089, 0.6087662337662336, 0.5291487455197137], [0.44541816009557933, 0.6087662337662336, 0.5189934289127844], [0.44541816009557933, 0.5997474747474747, 0.5189934289127844], [0.44541816009557933, 0.40025252525252514, 0.5189934289127844], [0.44541816009557933, 0.3912337662337661, 0.5189934289127844], [0.4555734767025089, 0.3912337662337661, 0.5291487455197137]], "data04": [[0.6407556750298682, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.6915322580645158, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.7423088410991633, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411]], "data05": [[0.6306003584229389, 0.7599206349206349], [0.9644563918757465, 0.7599206349206349], [0.9746117084826762, 0.7599206349206349], [0.9746117084826762, 0.768939393939394], [0.9746117084826762, 0.9684343434343436], [0.9746117084826762, 0.9774531024531026], [0.9644563918757465, 0.9774531024531026], [0.6306003584229389, 0.9774531024531026], [0.6204450418160092, 0.9774531024531026], [0.6204450418160092, 0.9684343434343436], [0.6204450418160092, 0.768939393939394], [0.6204450418160092, 0.7599206349206349], [0.6306003584229389, 0.7599206349206349]]}, "id": "el138682258505469952", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & mpld3
+    mpld3_load_lib("https://d3js.org/d3.v5.js", function(){
+         mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.5.9.js", function(){
+                 
+                 mpld3.draw_figure("fig_el1386822585054699526619834583", {"width": 1200.0, "height": 400.0, "axes": [{"bbox": [0.125, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-1.32785, 0.25505], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-1.32785, 0.25505], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 10, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258461903168", "lines": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "id": "el138682258528798416", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 2, "coordinates": "data", "id": "el138682258528799136", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 3, "coordinates": "data", "id": "el138682258528799808", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528801584", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528803072", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528804560", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528800240", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462222432"}, {"text": "Valores", "position": [-0.17878434886499406, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462223728"}, {"text": "Gr\u00e1fica de la Aceleracion", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462477232"}, {"text": "Aceleraci\u00f3n X", "position": [0.6079032258064515, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528800912"}, {"text": "Aceleraci\u00f3n Y", "position": [0.6079032258064515, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528802400"}, {"text": "Aceleraci\u00f3n Z", "position": [0.6079032258064515, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528803888"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.3985294117647059, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-42.483135000000004, 61.304835000000004], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-42.483135000000004, 61.304835000000004], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 8, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462220800", "lines": [{"data": "data01", "xindex": 0, "yindex": 4, "coordinates": "data", "id": "el138682258528806480", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 5, "coordinates": "data", "id": "el138682258528801872", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 6, "coordinates": "data", "id": "el138682258528807440", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "axes", "id": "el138682258528809168", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 2, "coordinates": "axes", "id": "el138682258528810656", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data04", "xindex": 0, "yindex": 3, "coordinates": "axes", "id": "el138682258528812144", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258528807776", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462488368"}, {"text": "Valores", "position": [-0.16233273596176834, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462489616"}, {"text": "Gr\u00e1fica del Giroscopio", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258462710592"}, {"text": "Gyro X", "position": [0.7829301075268817, 0.9237012987012989], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528808496"}, {"text": "Gyro Y", "position": [0.7829301075268817, 0.8556998556998556], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528809984"}, {"text": "Gyro Z", "position": [0.7829301075268817, 0.7876984126984128], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258528811472"}], "collections": [], "images": [], "sharex": [], "sharey": []}, {"bbox": [0.6720588235294118, 0.10999999999999999, 0.2279411764705882, 0.77], "xlim": [-1.6500000000000001, 34.65], "ylim": [-0.6151949999999999, 0.029295], "xdomain": [-1.6500000000000001, 34.65], "ydomain": [-0.6151949999999999, 0.029295], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 6, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}, {"position": "left", "nticks": 9, "tickvalues": null, "tickformat_formatter": "", "tickformat": null, "scale": "linear", "fontsize": 10.0, "grid": {"gridOn": true, "color": "#B0B0B0", "dasharray": "none", "alpha": 1.0}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el138682258462486736", "lines": [{"data": "data01", "xindex": 0, "yindex": 7, "coordinates": "data", "id": "el138682258529043504", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 8, "coordinates": "data", "id": "el138682258529043600", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data01", "xindex": 0, "yindex": 9, "coordinates": "data", "id": "el138682258529044464", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 2, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 1, "coordinates": "axes", "id": "el138682258529046192", "color": "#1F77B4", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 2, "coordinates": "axes", "id": "el138682258529047680", "color": "#FF7F0E", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}, {"data": "data02", "xindex": 4, "yindex": 3, "coordinates": "axes", "id": "el138682258529049168", "color": "#2CA02C", "linewidth": 1.5, "dasharray": "none", "alpha": 1, "zorder": 1000002.0, "drawstyle": "default"}], "paths": [{"data": "data03", "xindex": 2, "yindex": 1, "coordinates": "axes", "pathcodes": ["M", "L", "S", "L", "S", "L", "S", "L", "S", "Z"], "id": "el138682258529044800", "dasharray": "none", "alpha": 0.8, "facecolor": "rgba(255, 255, 255, 0.8)", "edgecolor": "rgba(204, 204, 204, 0.8)", "edgewidth": 1.0, "zorder": 1000000.0}], "markers": [], "texts": [{"text": "\u00cdndice", "position": [0.5, -0.09505772005772006], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "hanging", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528600944"}, {"text": "Valores", "position": [-0.17878434886499361, 0.5], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -90.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528602192"}, {"text": "Gr\u00e1fica del Magnetometro", "position": [0.5, 1.027056277056277], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el138682258528609536"}, {"text": "Magneto X", "position": [0.6814784946236565, 0.55501443001443], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529045520"}, {"text": "Magneto Y", "position": [0.6814784946236565, 0.48701298701298684], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529047008"}, {"text": "Magneto Z", "position": [0.6814784946236565, 0.4190115440115439], "coordinates": "axes", "h_anchor": "start", "v_baseline": "auto", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 1000003.0, "id": "el138682258529048496"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[0.0, -0.0699, -0.0083, -1.0003, 0.2823, -1.1597, 0.0916, -0.1465, -0.5859, 0.0], [1.0, -0.0699, -0.0017, -1.0032, -0.3052, -0.8316, 0.1221, -0.1465, -0.5859, 0.0], [2.0, -0.0696, -0.0039, -0.9864, -0.061, -0.8316, 0.2441, -0.1465, -0.5859, 0.0], [3.0, -0.0657, 0.0176, -0.9783, -4.7913, -5.4321, 2.8229, -0.1465, -0.5859, 0.0], [4.0, -0.0755, -0.0474, -0.9732, -1.5182, -0.8545, -14.6027, -0.1465, -0.5859, 0.0], [5.0, -0.0682, 0.0081, -0.9979, 0.0, -0.9308, 0.206, -0.1465, -0.5859, 0.0], [6.0, -0.0779, -0.0017, -1.0069, -0.5188, -0.8545, 0.0229, -0.1465, -0.5859, 0.0], [7.0, -0.067, -0.0115, -1.0147, -0.061, -1.2054, 0.1297, -0.1465, -0.5859, 0.0], [8.0, -0.0679, -0.0037, -0.9993, -0.0458, -0.7706, 0.2136, -0.1465, -0.5859, 0.0], [9.0, -0.0687, -0.0051, -1.0035, 0.3433, -1.0529, 0.061, -0.1465, -0.5859, 0.0], [10.0, -0.1724, -0.0095, -0.9129, 8.6517, 16.3116, 1.8082, -0.1465, -0.5859, 0.0], [11.0, -0.0994, -0.1375, -1.0721, 24.9557, -5.0354, -16.5634, -0.1465, -0.5859, 0.0], [12.0, -0.0721, 0.073, -1.0467, -7.2327, -0.5264, -24.9939, -0.1465, -0.5859, 0.0], [13.0, -0.1402, 0.0415, -0.9288, 20.5688, 14.0228, 36.5524, -0.1465, -0.5859, 0.0], [14.0, -0.0411, 0.0571, -0.7916, -0.0916, 10.7193, -21.553, -0.1465, -0.5859, 0.0], [15.0, -0.0867, 0.0425, -1.0318, 0.4807, 21.7819, -23.1552, -0.1465, -0.5859, 0.0], [16.0, -0.1307, 0.0266, -1.0875, -21.8964, -12.0468, 23.8953, -0.1465, -0.5859, 0.0], [17.0, -0.0999, -0.0496, -1.053, 2.7084, -3.8757, -1.0452, -0.1465, -0.5859, 0.0], [18.0, -0.1024, -0.1465, -0.96, 12.3062, 4.3411, 29.2511, -0.1465, -0.5859, 0.0], [19.0, -0.1404, -0.0762, -1.0967, -0.0992, 17.2501, 56.5872, -0.1465, -0.5859, 0.0], [20.0, -0.0892, -0.166, -1.0826, 3.7689, 2.3041, -37.7655, -0.1465, -0.5859, 0.0], [21.0, 0.1725, 0.0593, -1.0735, 7.6675, 16.4261, 1.8921, -0.1465, -0.5859, 0.0], [22.0, -0.0462, 0.1831, -1.0167, -2.1591, -12.8021, 15.8615, -0.1465, -0.5859, 0.0], [23.0, -0.0013, 0.0234, -0.8211, -4.0817, -6.4774, 4.425, -0.1465, -0.5859, 0.0], [24.0, -0.1783, -0.0574, -1.2559, 14.473, -7.637, -18.1274, -0.1465, -0.5859, 0.0], [25.0, -0.0174, 0.0454, -0.7767, 5.0964, -16.3116, -0.9918, -0.1465, -0.5859, 0.0], [26.0, 0.0871, 0.0759, -0.8536, -4.6539, -4.1809, -28.3432, -0.1465, -0.5859, 0.0], [27.0, -0.0604, 0.0671, -1.1885, 5.3024, 6.0806, 10.0937, -0.1465, -0.5859, 0.0], [28.0, 0.0358, 0.1707, -0.9385, 4.303, -21.5836, 14.679, -0.1465, -0.5859, 0.0], [29.0, -0.139, 0.1729, -1.0076, -3.334, -11.5433, -36.232, -0.1465, -0.5859, 0.0], [30.0, 0.0544, 0.0635, -0.8052, -5.806, -13.2294, -5.4245, -0.1465, -0.5859, 0.0], [31.0, 0.1303, 0.1675, -1.0279, -3.2196, -2.8076, -9.3002, -0.1465, -0.5859, 0.0], [32.0, 0.0346, 0.1313, -1.2083, 5.3101, 27.5879, 12.1307, -0.1465, -0.5859, 0.0], [33.0, -0.0074, 0.043, -0.9876, 0.1984, -34.4391, -14.4348, -0.1465, -0.5859, 0.0]], "data02": [[0.4657287933094384, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.5393040621266434], [0.516505376344086, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.590080645161291], [0.5672819593787335, 0.5707972582972582, 0.5027958152958151, 0.4347943722943722, 0.6408572281959385]], "data03": [[0.4555734767025089, 0.3912337662337661, 0.5291487455197137], [0.9644563918757466, 0.3912337662337661, 0.9644563918757472], [0.9746117084826761, 0.3912337662337661, 0.9746117084826769], [0.9746117084826761, 0.40025252525252514, 0.9746117084826769], [0.9746117084826761, 0.5997474747474747, 0.9746117084826769], [0.9746117084826761, 0.6087662337662336, 0.9746117084826769], [0.9644563918757466, 0.6087662337662336, 0.9644563918757472], [0.4555734767025089, 0.6087662337662336, 0.5291487455197137], [0.44541816009557933, 0.6087662337662336, 0.5189934289127844], [0.44541816009557933, 0.5997474747474747, 0.5189934289127844], [0.44541816009557933, 0.40025252525252514, 0.5189934289127844], [0.44541816009557933, 0.3912337662337661, 0.5189934289127844], [0.4555734767025089, 0.3912337662337661, 0.5291487455197137]], "data04": [[0.6407556750298682, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.6915322580645158, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411], [0.7423088410991633, 0.9394841269841272, 0.8714826839826839, 0.8034812409812411]], "data05": [[0.6306003584229389, 0.7599206349206349], [0.9644563918757465, 0.7599206349206349], [0.9746117084826762, 0.7599206349206349], [0.9746117084826762, 0.768939393939394], [0.9746117084826762, 0.9684343434343436], [0.9746117084826762, 0.9774531024531026], [0.9644563918757465, 0.9774531024531026], [0.6306003584229389, 0.9774531024531026], [0.6204450418160092, 0.9774531024531026], [0.6204450418160092, 0.9684343434343436], [0.6204450418160092, 0.768939393939394], [0.6204450418160092, 0.7599206349206349], [0.6306003584229389, 0.7599206349206349]]}, "id": "el138682258505469952", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+            })
+         });
+}
+</script>
+    
+            <div class="folium-map" id="map_15a8ad74c3695a402b80c4bda950c93a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_15a8ad74c3695a402b80c4bda950c93a = L.map(
+                "map_15a8ad74c3695a402b80c4bda950c93a",
+                {
+                    center: [6.267552, -75.567749],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2136e3799c842a5ddaa229c7ce350d7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_0f3fe378104cd546efdb6c1f3a2e5f5c = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_083f062399d4a968931680ac054c488d = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_987ec92805597a87b74a6abf31e7b2b3 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_6d020648ac7f54051a8a4280bfe2f1f8 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_061b4a913528b0d51636dd499b3d2c9f = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_9f6952d95ab30c60bbc3b96d5e01a063 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_467b2eb1847ad4c9e239e69d23fc500a = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_9bc962dc8b000c42b8e4ec10933a5bd9 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_5e1e171aee0b00ef4f4fef1b07c04998 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_30bc315dceaae780922a249857099944 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_26f00817748f09846f8b8ed1cf33dac6 = L.marker(
+                [6.267552, -75.567749],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_60bd6c30089954d1e823a9a2828f1510 = L.marker(
+                [6.267366, -75.567993],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_aca94115c941ad6e85909ed350b09b9d = L.marker(
+                [6.26735, -75.567986],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_0eba92bda18c13dd9d1f78c5f676cf19 = L.marker(
+                [6.267351, -75.567986],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_cde96369b5bd1672b7a0e1b680640a32 = L.marker(
+                [6.267374, -75.56797],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_aaab6832602e10c375504f2ab27096d2 = L.marker(
+                [6.267403, -75.567947],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_6fc3446e6a60e9468b3b31683d2b64ca = L.marker(
+                [6.267445, -75.567917],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_6af7bff30f6a95d63b2846ad2be09bc4 = L.marker(
+                [6.267478, -75.567894],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_ae0df7e9c8155a49ea6abfabae03eedc = L.marker(
+                [6.267505, -75.567871],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_edfab836ea84e5c6df1eb6ec031020ab = L.marker(
+                [6.267503, -75.567871],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_040a81cb5a90bcf481817f37edc4c8a9 = L.marker(
+                [6.267497, -75.567871],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_dd9cd50de737b0bd004a5300a0251e62 = L.marker(
+                [6.267462, -75.567886],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_329323efa4201396af7b1d3166cbc217 = L.marker(
+                [6.267424, -75.567894],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_01ee176b8a434267c608ef9ef06e415b = L.marker(
+                [6.267382, -75.567917],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_a3badc63d4ce017e50943da7f3451770 = L.marker(
+                [6.267345, -75.567947],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_4f061710309993b6c52c6fc657b0cc18 = L.marker(
+                [6.267313, -75.567963],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_98ffd915319fdb020773ce8f62824c8d = L.marker(
+                [6.267278, -75.567978],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_3f041d3f5659288739365be8624dbabe = L.marker(
+                [6.267249, -75.567993],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_d331f42975daf91dd6cf1ef6bf3e0a80 = L.marker(
+                [6.267217, -75.567993],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_61bb236af8fd431283387299b898be02 = L.marker(
+                [6.267181, -75.567993],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_b95cc98d84f59e2bf7a9f13ce5071d6f = L.marker(
+                [6.267152, -75.567993],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_03f0508ec45d756c5946705e49e816f3 = L.marker(
+                [6.267128, -75.568001],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_7d0e96c84b9f01ffd9cf5f14cf7a01bc = L.marker(
+                [6.2671, -75.568001],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_29cdda5759e2e0e62091d0a58228ee6e = L.marker(
+                [6.267068, -75.568008],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var marker_49db971b7e2cc768a7acd190a48ab44c = L.marker(
+                [6.267033, -75.568016],
+                {"iconSize": [2, 10]}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            var poly_line_4acc91208aebea463c6c91a54e49209a = L.polyline(
+                [[6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267366, -75.567993], [6.26735, -75.567986], [6.267351, -75.567986], [6.267374, -75.56797], [6.267403, -75.567947], [6.267445, -75.567917], [6.267478, -75.567894], [6.267505, -75.567871], [6.267503, -75.567871], [6.267497, -75.567871], [6.267462, -75.567886], [6.267424, -75.567894], [6.267382, -75.567917], [6.267345, -75.567947], [6.267313, -75.567963], [6.267278, -75.567978], [6.267249, -75.567993], [6.267217, -75.567993], [6.267181, -75.567993], [6.267152, -75.567993], [6.267128, -75.568001], [6.2671, -75.568001], [6.267068, -75.568008], [6.267033, -75.568016]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_15a8ad74c3695a402b80c4bda950c93a);
+        
+    
+            map_15a8ad74c3695a402b80c4bda950c93a.fitBounds(
+                [[6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267552, -75.567749], [6.267366, -75.567993], [6.26735, -75.567986], [6.267351, -75.567986], [6.267374, -75.56797], [6.267403, -75.567947], [6.267445, -75.567917], [6.267478, -75.567894], [6.267505, -75.567871], [6.267503, -75.567871], [6.267497, -75.567871], [6.267462, -75.567886], [6.267424, -75.567894], [6.267382, -75.567917], [6.267345, -75.567947], [6.267313, -75.567963], [6.267278, -75.567978], [6.267249, -75.567993], [6.267217, -75.567993], [6.267181, -75.567993], [6.267152, -75.567993], [6.267128, -75.568001], [6.2671, -75.568001], [6.267068, -75.568008], [6.267033, -75.568016]],
+                {}
+            );
+        
+</script>
+</html>
